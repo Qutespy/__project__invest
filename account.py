@@ -68,5 +68,5 @@ class USER:
                                 index=range(1,len(self.__accounts)+1))
 
         return acc_user
-with Client(My_tokens.token_main_ro_all_accounts) as client:
+with Client(My_tokens.token_to_read_brokerage_account) as client:
     print(USER(client).get_accounts())
